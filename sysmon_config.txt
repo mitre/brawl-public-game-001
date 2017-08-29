@@ -1,0 +1,30 @@
+Sysinternals Sysmon v3.11 - System activity monitor
+Copyright (C) 2014-2015 Mark Russinovich and Thomas Garnier
+Sysinternals - www.sysinternals.com
+
+Current configuration:
+ - Service name:                  Sysmon
+ - Driver name:                   SysmonDrv
+ - HashingAlgorithms:             SHA1,MD5,SHA256,IMPHASH
+ - Network connection:            enabled
+ - Image loading:                 enabled
+
+Rule configuration (version 0.00):
+ - ProcessCreate                      onmatch: exclude
+ - ProcessTerminate                   onmatch: exclude
+ - DriverLoad                         onmatch: exclude
+        Signature                      filter: contains     value: 'microsoft'
+        Signature                      filter: contains     value: 'windows'
+ - NetworkConnect                     onmatch: exclude
+ - ImageLoad                          onmatch: include
+        Image                          filter: is           value: 'C:\Windows\System32\lsass.exe'
+        Image                          filter: contains     value: 'AcroRd32.exe'
+        Image                          filter: contains     value: 'chrome.exe'
+        Image                          filter: contains     value: 'OUTLOOK.EXE'
+        Image                          filter: contains     value: 'FlashPlayerPlugin'
+        Image                          filter: contains     value: 'iexplore.exe'
+        Image                          filter: contains     value: 'firefox.exe'
+ - CreateRemoteThread                 onmatch: exclude
+        SourceImage                    filter: is           value: 'c:\windows\system32\csrss.exe'
+        SourceImage                    filter: is           value: 'c:\windows\system32\wbem\wmiprvse.exe'
+        SourceImage                    filter: is           value: 'c:\windows\syswow64\wbem\wmiprvse.exe'
