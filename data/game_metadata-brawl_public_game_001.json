@@ -1,1 +1,3 @@
-{"@timestamp": "2017-05-01T18:58:51.322Z", "type": "game_metadata", "hosts": ["sounder-pc.brawlco.com", "mims-pc.brawlco.com", "santilli-pc.brawlco.com", "peele-pc.brawlco.com", "minahan-pc.brawlco.com", "attkisson-pc.brawlco.com", "sespinosa-pc.brawlco.com", "colgan-pc.brawlco.com", "beane-pc.brawlco.com", "platten-pc.brawlco.com", "teston-pc.brawlco.com", "harley-pc.brawlco.com", "kressierer-pc.brawlco.com", "smith-pc.brawlco.com", "ostermeyer-pc.brawlco.com", "fulco-pc.brawlco.com", "zissler-pc.brawlco.com", "escue-pc.brawlco.com"], "starting_host": "sounder-pc.brawlco.com", "randomization_seed": 1234, "game_id": "BRAWL_public_game_001", "@uuid": "fd6dbc9e-aaf7-4e68-aed0-91f7841654a6"}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d3a0bac469ae12957908e4c96899c10e23fde958c7295b799a80e626b63ae71
+size 698
