@@ -172,7 +172,7 @@ Use the <a href="https://car.mitre.org/wiki/Data_Model">CAR data model</a> to de
 | userinfo.LogonTypeName | Description of LogonType |
 | userinfo.UserName | UserName of principal logging on |
 
-The `userinfo` field can be useful in determining which credentials may have been compromised if a credential dumper such as Mimikatz was run on the system.  
+This data was collected periodically using the unified_json.ps1 module from MITRE's <a href="https://github.com/mitre/ps_pc_props/">PowerShell Utilities for Security Situational Awareness</a>The `userinfo` field can be useful in determining which credentials may have been compromised if a credential dumper such as Mimikatz was run on the system.  
 
 
 ## bsf ##
