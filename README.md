@@ -11,6 +11,8 @@ BRAWL seeks to create a compromise by creating a system to automatically create 
 BRAWL also has a concept of bots, which can be either Red, Blue, or Gray. Red bots are offensive, Blue bots are defensive, and Gray bots emulate legitimate user behavior in order to provide noise to make detection more difficult. When a user wants to test research hypotheses, they implement a BRAWL bot. The BRAWL bot registers itself with the BRAWL Controller, which then orchestrates games between BRAWL bots on the Game Board. 
 
 ## Data Release ##
+> __Note__: Due to issues with file sizes and GitHub quotas, we are placing all the files into a zip file instead of leaving them as plain text in the git repo. All the data is in the file 
+
 This release consists of some data from a BRAWL prototype. We created a small enterprise network, described below. We then ran a single game using the MITRE <a href="https://github.com/mitre/caldera">CALDERA</a> research project as a red bot. 
 
 CALDERA is a related MITRE research project that automates adversary emulation activity based on the information in <a href="https://attack.mitre.org">Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK)</a> model. It implements a set of ATT&CK tactics and techniques and uses a planning system (https://dl.acm.org/citation.cfm?id=2991111) to automate the actuation of those techniques and generate post-compromise adversary behavior within an enterprise network.
