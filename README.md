@@ -1,6 +1,6 @@
 
 
-# BRAWL 
+# BRAWLHALLA
 
 One of the challenging problems for cyber security researchers developing detection and response capabilities is finding a realistic environment in which to test their hypothesis and capabilities. 
 
